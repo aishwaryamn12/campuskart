@@ -504,6 +504,19 @@ function Gigs() {
           font-weight: 750;
 
           white-space: nowrap;
+
+          text-decoration: none;
+
+          cursor: pointer;
+
+          transition: 0.2s;
+        }
+
+        .contact-link:hover {
+          transform: translateY(-2px);
+
+          box-shadow:
+            0 8px 18px rgba(0, 0, 0, 0.15);
         }
 
         /* =========================
@@ -643,22 +656,29 @@ function Gigs() {
 
                   <div className="price">
                     ₹{gig.price}
+
                     {gig.id === 5 && (
-                      <span style={{
-                        fontSize: '11px',
-                        fontWeight: '600'
-                      }}>
+                      <span
+                        style={{
+                          fontSize: '11px',
+                          fontWeight: '600'
+                        }}
+                      >
                         {' '} / hour
                       </span>
                     )}
+
                     {gig.id !== 5 && (
-                      <span style={{
-                        fontSize: '11px',
-                        fontWeight: '600'
-                      }}>
+                      <span
+                        style={{
+                          fontSize: '11px',
+                          fontWeight: '600'
+                        }}
+                      >
                         {' '} onwards
                       </span>
                     )}
+
                   </div>
 
                   <div className="price-label">
@@ -726,8 +746,11 @@ function Gigs() {
 
           </div>
 
+
+          {/* WHATSAPP CONTACT BUTTON */}
+
           <a
-            href="https://wa.me/"
+            href="https://wa.me/919980044289?text=Hi%20Aishwarya%20%26%20Jahnavi%2C%20I%27m%20interested%20in%20CampusKart%20services.%20I%20would%20like%20to%20know%20more."
             target="_blank"
             rel="noreferrer"
             className="contact-link"
